@@ -1,7 +1,5 @@
 package com.skilldistilery.foodtruck.entities;
 
-import com.skilldistilery.foodtruck.app.FoodTruckApp;
-
 public class Foodtruck {
 
 	public void bestTruck(String[] truckList, int[] rating) {
@@ -16,13 +14,12 @@ public class Foodtruck {
 		System.out.println("The best rated truck is " + bestTruck);
 	}
 
-	public void getfoodTruck(String[] truckList) {
+	public void displayTruck(String[] truckList) {
 
 		for (int i = 0; i < truckList.length; i++) {
-			if (truckList[i] == null) {
-				break;
+			if (truckList[i] != null) {
+				System.out.println(truckList[i]);
 			}
-			System.out.println(truckList[i]);
 
 		}
 	}
